@@ -21,6 +21,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistrarGanaderoActivity"/>
+        <activity android:name=".RegistroCebaActivity"/>
+        <activity android:name=".RegistroCebaLoteActivity" />
+        <activity android:name=".SalidaLotesActivity" />
+        <activity android:name=".RegistroSaludActivity" />
+        <activity android:name=".ActualizarSaludActivity" />
+        <activity android:name=".HistorialSaludActivity" />
 
     </application>
 
