@@ -31,16 +31,18 @@ class RegistrarGanaderoActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // En tu MainActivity o donde tengas el layout con el botón de IA
+
         val navIA: LinearLayout = findViewById(R.id.nav_IA)
         navIA.setOnClickListener {
             startActivity(Intent(this, IAActivity::class.java))
         }
 
-        // En tu MainActivity o donde tengas la barra de navegación
         val bottomNavPerfil: LinearLayout = findViewById(R.id.bottomNavPerfil)
         bottomNavPerfil.setOnClickListener {
-            startActivity(Intent(this, PerfilActivity::class.java))
+            val intent = Intent(this, PerfilActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+            }
+            startActivity(intent)
         }
 
         // En tu actividad principal

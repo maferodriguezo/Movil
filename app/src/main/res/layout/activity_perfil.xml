@@ -20,14 +20,22 @@
             android:layout_marginBottom="24dp">
 
             <!-- Foto de perfil -->
+
             <ImageView
-                android:id="@+id/imgPerfil"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:id="@+id/imageButtonPerfil"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:clickable="true"
+                android:contentDescription="Toca para tomar una foto de perfil"
+                android:src="@drawable/ic_launcher_foreground"
                 android:scaleType="centerCrop"
-                android:background="@android:color/darker_gray"
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_marginBottom="16dp"/>
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
 
             <!-- Icono para cambiar foto -->
             <ImageButton
