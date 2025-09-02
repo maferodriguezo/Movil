@@ -30,6 +30,12 @@ class CalendarioActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // En actividad marketplace
+        val bottomNavMarketplace: LinearLayout = findViewById(R.id.bottomNavMarketplace)
+        bottomNavMarketplace.setOnClickListener {
+            startActivity(Intent(this, MarketplaceViewActivity::class.java))
+        }
+
 
     }
 

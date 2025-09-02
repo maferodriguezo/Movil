@@ -37,6 +37,7 @@
         <activity android:name=".IAActivity" />
         <activity android:name=".PerfilActivity"/>
         <activity android:name=".CalendarioActivity"/>
+        <activity android:name=".MarketplaceViewActivity"/>
 
     </application>
 

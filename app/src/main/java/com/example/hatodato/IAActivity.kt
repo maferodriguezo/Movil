@@ -35,5 +35,11 @@ class IAActivity : AppCompatActivity() {
             startActivity(Intent(this, CalendarioActivity::class.java))
         }
 
+        // En actividad marketplace
+        val bottomNavMarketplace: LinearLayout = findViewById(R.id.bottomNavMarketplace)
+        bottomNavMarketplace.setOnClickListener {
+            startActivity(Intent(this, MarketplaceViewActivity::class.java))
+        }
+
     }
 }

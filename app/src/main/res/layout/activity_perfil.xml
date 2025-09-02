@@ -4,190 +4,152 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:padding="16dp">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="16dp">
 
-        <!-- Encabezado con foto y nombre -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginBottom="24dp">
+            android:orientation="vertical">
 
-            <!-- Foto de perfil -->
-
-            <ImageView
-                android:id="@+id/imageButtonPerfil"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="50dp"
-                android:clickable="true"
-                android:contentDescription="Toca para tomar una foto de perfil"
-                android:src="@drawable/ic_launcher_foreground"
-                android:scaleType="centerCrop"
-                android:focusable="true"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-
-
-            <!-- Icono para cambiar foto -->
-            <ImageButton
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@android:drawable/ic_menu_camera"
-                android:layout_marginTop="-40dp"
-                android:layout_marginBottom="16dp"
-                android:layout_gravity="end"
-                android:contentDescription="Cambiar foto"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BIENVENIDO"
-                android:textSize="18sp"
-                android:textColor="#666666"
-                android:layout_marginBottom="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PEDRO"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#1E2C4C"
-                android:layout_marginBottom="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4,6 de puntuación"
-                android:textSize="16sp"
-                android:textColor="#4A90E2"
-                android:textStyle="bold"
-                android:layout_marginBottom="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TOP 67 en nuestro MarketPlace"
-                android:textSize="14sp"
-                android:textColor="#333333"
-                android:layout_marginBottom="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10% de incremento en ventas el último mes"
-                android:textSize="14sp"
-                android:textColor="#27AE60"
-                android:textStyle="bold"
-                android:layout_marginBottom="24dp"/>
-        </LinearLayout>
-
-        <!-- Línea divisoria -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#DDDDDD"
-            android:layout_marginBottom="24dp"/>
-
-        <!-- Sección TUS DATOS -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TUS DATOS"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#1E2C4C"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- Categoría -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="16dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CATEGORÍA"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:textColor="#666666"
-                android:layout_marginBottom="4dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Alimento"
-                android:textSize="16sp"
-                android:textColor="#333333"
-                android:padding="12dp"
-                android:background="#F8F9FA"
-                android:layout_marginBottom="8dp"/>
-        </LinearLayout>
-
-        <!-- Ubicación Principal -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="16dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="UBICACIÓN PRINCIPAL"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:textColor="#666666"
-                android:layout_marginBottom="4dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bogotá"
-                android:textSize="16sp"
-                android:textColor="#333333"
-                android:padding="12dp"
-                android:background="#F8F9FA"
-                android:layout_marginBottom="8dp"/>
-        </LinearLayout>
-
-        <!-- Lugares de Distribución -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="32dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="LUGARES DE DISTRIBUCIÓN"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:textColor="#666666"
-                android:layout_marginBottom="4dp"/>
-
+            <!-- Encabezado con foto y nombre -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="12dp"
-                android:background="#F8F9FA">
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <!-- Foto de perfil -->
+                <ImageView
+                    android:id="@+id/imageButtonPerfil"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="50dp"
+                    android:clickable="true"
+                    android:contentDescription="Toca para tomar una foto de perfil"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:scaleType="centerCrop"
+                    android:focusable="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <!-- Icono para cambiar foto -->
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="end"
+                    android:contentDescription="Cambiar foto"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BIENVENIDO"
+                    android:textSize="18sp"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PEDRO"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E2C4C"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4,6 de puntuación"
+                    android:textSize="16sp"
+                    android:textColor="#4A90E2"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOP 67 en nuestro MarketPlace"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10% de incremento en ventas el último mes"
+                    android:textSize="14sp"
+                    android:textColor="#27AE60"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="24dp"/>
+            </LinearLayout>
+
+            <!-- Línea divisoria -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Sección TUS DATOS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TUS DATOS"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1E2C4C"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Categoría -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CATEGORÍA"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alimento"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:padding="12dp"
+                    android:background="#F8F9FA"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+            <!-- Ubicación Principal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UBICACIÓN PRINCIPAL"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="4dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -195,45 +157,79 @@
                     android:text="Bogotá"
                     android:textSize="16sp"
                     android:textColor="#333333"
-                    android:layout_marginBottom="4dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Bojacé"
-                    android:textSize="16sp"
-                    android:textColor="#333333"
-                    android:layout_marginBottom="4dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Santander"
-                    android:textSize="16sp"
-                    android:textColor="#333333"/>
+                    android:padding="12dp"
+                    android:background="#F8F9FA"
+                    android:layout_marginBottom="8dp"/>
             </LinearLayout>
+
+            <!-- Lugares de Distribución -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LUGARES DE DISTRIBUCIÓN"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:background="#F8F9FA">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bogotá"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bojacé"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Santander"
+                        android:textSize="16sp"
+                        android:textColor="#333333"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Botón de editar perfil -->
+            <Button
+                android:id="@+id/btnEditarPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar Perfil"
+                android:backgroundTint="#4A90E2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="32dp"/>
+
         </LinearLayout>
-
-        <!-- Botón de editar perfil -->
-        <Button
-            android:id="@+id/btnEditarPerfil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Editar Perfil"
-            android:backgroundTint="#4A90E2"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:layout_marginBottom="32dp"/>
-
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
 
     <!-- Barra de Navegación Inferior -->
-<include
-android:id="@+id/bottomNavigationContainer"
-layout="@layout/layout_bottom_nav"
-android:layout_width="match_parent"
-android:layout_height="60dp"
-android:layout_alignParentBottom="true" />
+    <include
+        android:id="@+id/bottomNavigationContainer"
+        layout="@layout/layout_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
 
-    </RelativeLayout>
+</RelativeLayout>
