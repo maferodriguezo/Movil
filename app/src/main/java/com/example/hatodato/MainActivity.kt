@@ -3,6 +3,7 @@ package com.example.hatodato
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         btnGanadero.setOnClickListener {
             val intent = Intent(this, RegistrarGanaderoActivity::class.java)
             startActivity(intent)
+        }
+
+        val btnVendedor: LinearLayout = findViewById(R.id.btnVendedor)
+        btnVendedor.setOnClickListener {
+            startActivity(Intent(this, MarketplaceActivity::class.java))
         }
     }
 }

@@ -27,6 +27,7 @@
         <activity android:name=".RegistroSaludActivity" />
         <activity android:name=".ActualizarSaludActivity" />
         <activity android:name=".HistorialSaludActivity" />
+        <activity android:name=".MarketplaceActivity" />
 
     </application>
 
