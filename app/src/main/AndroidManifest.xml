@@ -28,6 +28,8 @@
         <activity android:name=".ActualizarSaludActivity" />
         <activity android:name=".HistorialSaludActivity" />
         <activity android:name=".MarketplaceActivity" />
+        <activity android:name=".IAActivity" />
+        <activity android:name=".PerfilActivity" />
 
     </application>
 

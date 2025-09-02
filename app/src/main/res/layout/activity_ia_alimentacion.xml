@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <!-- Contenido principal centrado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- Icono de IA o carga -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@android:drawable/ic_popup_sync"
+            android:layout_marginBottom="32dp"
+            app:tint="#4A90E2" />
+
+        <!-- Mensaje principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La alimentación adecuada para tus animales está siendo procesada"
+            android:textSize="20sp"
+            android:textColor="#1E2C4C"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="4sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mensaje secundario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nuestra inteligencia artificial está analizando las mejores opciones nutricionales para tu ganado"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:lineSpacingExtra="4sp"
+            android:layout_marginBottom="32dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

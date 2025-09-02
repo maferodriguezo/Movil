@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomNavigationContainer"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="#1E2C4C"
+    android:gravity="center"
+    android:paddingVertical="8dp">
+
+    <!-- Botón Inicio -->
+    <LinearLayout
+        android:id="@+id/bottomNavHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_view"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Botón IA -->
+    <LinearLayout
+        android:id="@+id/nav_IA"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="21dp"
+            android:src="@android:drawable/ic_menu_agenda"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IA"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Botón Marketplace -->
+    <LinearLayout
+        android:id="@+id/bottomNavMarketplace"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_upload"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Market"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Botón Calendario -->
+    <LinearLayout
+        android:id="@+id/bottomNavCalendar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_manage"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendario"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Botón Perfil -->
+    <LinearLayout
+        android:id="@+id/bottomNavPerfil"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
