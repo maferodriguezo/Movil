@@ -74,6 +74,18 @@ class PerfilActivity : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
         }
+
+        val bottomNavHome: LinearLayout = findViewById(R.id.bottomNavHome)
+        bottomNavHome.setOnClickListener {
+            startActivity(Intent(this, RegistrarGanaderoActivity::class.java))
+        }
+
+
+        // En actividad calendario
+        val bottomNavCalendar: LinearLayout = findViewById(R.id.bottomNavCalendar)
+        bottomNavCalendar.setOnClickListener {
+            startActivity(Intent(this, CalendarioActivity::class.java))
+        }
     }
 
     private fun checkCameraPermissionAndLaunch() {
