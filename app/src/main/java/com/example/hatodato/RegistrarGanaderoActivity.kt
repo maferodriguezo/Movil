@@ -43,5 +43,11 @@ class RegistrarGanaderoActivity : AppCompatActivity() {
             startActivity(Intent(this, PerfilActivity::class.java))
         }
 
+        // En tu actividad principal
+        val bottomNavCalendar: LinearLayout = findViewById(R.id.bottomNavCalendar)
+        bottomNavCalendar.setOnClickListener {
+            startActivity(Intent(this, CalendarioActivity::class.java))
+        }
+
     }
 }
